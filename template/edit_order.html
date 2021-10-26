@@ -5,7 +5,7 @@
 <div class="container">
     
 <h1>Edit Pizza</h1>
-
+{{note}}
 <form action="{% url 'edit_order' pizza.id %}" method="post">
     {% csrf_token %}
     {{pizzaform}}

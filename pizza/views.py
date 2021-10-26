@@ -65,8 +65,3 @@ def edit_order(request,pk):
             filled_form.save()
     return render(request, 'edit_order.html', {'pizza':pizza,'pizzaform':form})
 
-import requests
-def api_call(request):
-    response = requests.get('http://api.covid19api.com/countries').json()
-    return render(request, 'api.html', {'responose':response})
-    
